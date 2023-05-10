@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/anikinmd/reqdecoder/branch/main/graph/badge.svg?token=58tQ2DpwRf)](https://codecov.io/gh/anikinmd/reqdecoder)
+[![Go Report github.com/anikgithub.com/anikgithub.com/anikinmd/reqdecompinmd/reqdecompinmd/reqdecompCard](https://goreportcard.com/badge/github.com/anikinmd/reqdecoder)](https://goreportcard.com/report/github.com/anikinmd/reqdecoder)
 # reqdecoder
 Go middleware for decoding/decompressing request body
 
@@ -14,7 +16,7 @@ http.Handle("/", reqdecomp.RequestDecoder(http.HandlerFunc(func(w http.ResponseW
 	w.WriteHeader(http.StatusOK)
 })))
 ```
-With chi:
+Using chi:
 ```
 r := chi.NewRouter()
 r.Use(reqdecomp.RequestDecoder)
