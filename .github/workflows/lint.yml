@@ -25,4 +25,4 @@ jobs:
         run: go vet ./...
 
       - name: Run Revive linter
-        uses: morphy2k/revive-action@v2
+        uses: docker://morphy/revive-action:v2
